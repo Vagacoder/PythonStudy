@@ -1,0 +1,6 @@
+This is d1.txt
+Second line
+3rd line
+Forth line
+5th line
+#6 line

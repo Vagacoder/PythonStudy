@@ -45,7 +45,8 @@ pd2 = json.dumps(person1, indent=2, separators=(".", " = "), sort_keys=True)
 print(pd2)
 print(type(pd2))
 
-
+# ! But your may not convert this formated string back to json object
+print(json.loads(pd2))
 
 # %%
 # ! can Not dumpt python object to string

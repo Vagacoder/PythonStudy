@@ -16,6 +16,10 @@ if(x):
 else:
     print('No')
 
+print(x.span())
+print(x.string)
+print(x.group())
+
 regex2 = 'The Spain'
 y = re.search(regex2, txt)
 
