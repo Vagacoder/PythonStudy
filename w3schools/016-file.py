@@ -3,10 +3,14 @@
 
 #%%
 # * file read
-f = open('./data/d1.txt', 'rb')
-content = f.read()
-print(content)
-f.close()
+try:
+    f = open('./data/d1.txt', 'rb')
+    content = f.read()
+    print(content)
+except:
+    print('File is not found!')
+finally:
+    f.close()
 
 f = open('./data/d1.txt', 'rt')
 content = f.read(6)
@@ -63,5 +67,14 @@ if os.path.exists(foldername):
     os.rmdir(foldername)
 else:
     print('Folder {} does not exist'.format(foldername))
+
+# %%
+# * with statement
+with open('./data/d1.txt', 'rt') as d1:
+    content = d1.readline()
+    print(content)
+    for line in d1:
+        print(line)
+
 
 # %%

@@ -31,18 +31,33 @@ finally:
     f.close()
     print('d1.txt is closed')
 
+#%%
 try:
     f = open('../data/p1.txt', 'r')
     content = f.read()
     print(content)
     print('p1.txt is read')
-except:
-    print('Cannot open ../data/p1.txt')
+except FileExistsError as err:
+    print(err)
 finally:
     f.close()
     print('p1.txt is closed')
 
 
+#%%
+try:
+    f = open('../data/x1.txt', 'r')
+    content = f.read()
+    print(content)
+    print('x1.txt is read')
+except FileNotFoundError as err:
+    print(err)
+finally:
+    f.close()
+    print('x1.txt is closed')
+
+
+#%%
 class B(Exception):
     pass
 

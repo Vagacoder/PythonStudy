@@ -18,6 +18,7 @@ print(a3)
 a4 = np.array([1, 2, 3, 4], dtype='i4')
 print(a4.dtype)
 print(a4)
+
 # %%
 a5 = np.array([1.1, 1.2, 1.3])
 
@@ -30,4 +31,5 @@ a7 = np.array([1, 0, 3])
 a8 = a7.astype(bool)
 print(a8)
 print(a8.dtype)
+
 # %%

@@ -7,6 +7,7 @@ import numpy as np
 a1 = np.array([1, 2, 3, 4, 5])
 x = a1.copy()
 y = a1.view()
+z = a1
 
 print('Original arrays')
 print(a1)
@@ -29,4 +30,6 @@ print('\nCheck base')
 print(a1.base)
 print(x.base)
 print(y.base)
+print(z.base)
+
 # %%
