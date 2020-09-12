@@ -51,4 +51,28 @@ print(a6)
 print(a6[1, 1:4])
 print(a6[:, 2])
 print(a6[:1, 2:5])
+
+
+# %%
+
+a7 = a6.flatten()
+print(a7)
+
+print(a7[::-1])
+print(a7[::-2])
+
+print()
+
+print(a7[-1:0:-1])
+print(a7[-1:-(len(a7)+1):-1])
+
+print()
+
+print(a7[len(a7):None:-1])
+print(a7[len(a7)::-1])
+print(a7[len(a7):0:-1])
+print(a7[len(a7):1:-1])
+print(a7[len(a7):-1:-1])
+
+
 # %%

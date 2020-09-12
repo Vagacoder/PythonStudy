@@ -28,6 +28,8 @@ with open('./data/persons.pkl', 'wb') as pickleFile:
     print('Database of person is saved!')
 
 # %%
+import pickle
+
 with open('./data/persons.pkl', 'rb') as readPickleFile:
     data = pickle.load(readPickleFile)
     for key in data.keys():
