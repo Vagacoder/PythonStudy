@@ -32,4 +32,5 @@ print(a8)
 
 a9 = np.hsplit(a6, 3)
 print(a9)
+
 # %%
