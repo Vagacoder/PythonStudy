@@ -15,6 +15,8 @@ pl.show()
 # %%
 y = random.normal(size=(3,5))
 print(y)
+sb.distplot(y)
+pl.show()
 
 # %%
 z = random.normal(loc=1, scale=2, size=(2,3))
