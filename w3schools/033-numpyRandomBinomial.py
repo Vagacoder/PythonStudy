@@ -21,3 +21,9 @@ sb.distplot(random.binomial(n=100, p=0.5, size=1000), hist=False, label='binomia
 
 plt.show() 
 # %%
+# * Python Numpy Random Multinomial Distribution
+
+y = random.multinomial(n=6, pvals=[1/6, 1/6, 1/6, 1/6, 1/6, 1/6], size=3);
+
+print(y)
+
