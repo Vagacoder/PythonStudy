@@ -57,8 +57,12 @@ no2 = air_q.pivot(index='datetime', columns='location', values='value')
 no2
 # %%
 air_q.set_index('datetime')
+#%%
+air_q.index
+#%%
+air_q.index.year
 # %%
-no2.index.year, no2.index.weekday
+no2.index, no2.index.year, no2.index.weekday
 # %%
 no2['2019-05-20':'2019-05-21'].plot()
 # %%
