@@ -25,12 +25,34 @@ x
 
 # %%
 melbourne_features = ['Rooms', 'Bathroom', 'Landsize', 'Lattitude', 'Longtitude']
-x = melbourne_data[melbourne_features]
+X = melbourne_data[melbourne_features]
 print(x.shape)
-x
+X
 
 # %%
-x.describe()
+X.describe()
+
+#%%
+X.head()
 
 # %%
-# * Build model from sklearn
+# * Build model from sklearn, scikit-learn.
+# * 1 Decision tree model
+
+from sklearn.tree import DecisionTreeRegressor
+
+# * Define model. Specify a number fro random_state to ensure same results each run
+melbourne_model = DecisionTreeRegressor(random_state=1)
+
+# * Fit model
+melbourne_model.fit(X, y)
+
+# %%
+# * try to predicate
+print('Making predictions for the following 5 houses:')
+print(X.head())
+print('The predications are')
+print(melbourne_model.predict(X.head()))
+print('Actual price is:')
+print(y.head())
+# %%
